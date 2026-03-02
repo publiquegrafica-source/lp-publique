@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfica Publique - Soluções em Impressão</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0056cc 0%, #003d99 100%);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 86, 204, 0.2);
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-icon {
+            font-size: 3rem;
+        }
+    </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-gray-50">
+  <div class="h-full w-full overflow-auto bg-gray-50"><!-- Header/Navbar -->
+   <header class="hero-gradient text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+     <h1 class="text-2xl font-bold">?? Gráfica Publique</h1>
+     <nav class="hidden md:flex gap-6"><a href="#servicos" class="hover:text-blue-200 transition">Serviços</a> <a href="#contato" class="hover:text-blue-200 transition">Contato</a>
+     </nav>
+    </div>
+   </header><!-- Hero Section -->
+   <section class="hero-gradient text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4 fade-in">
+     <h2 class="text-5xl md:text-6xl font-bold mb-6">Sua Gráfica Online</h2>
+     <p id="slogan-display" class="text-2xl md:text-3xl mb-8 text-blue-100">Preço justo, prazo e qualidade!</p>
+     <p class="text-lg mb-8 text-blue-100">Soluções completas em impressão para seu negócio</p><a href="#contato" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full cta-button hover:bg-blue-50"> Solicitar Orçamento </a>
+    </div>
+   </section><!-- Services Section -->
+   <section id="servicos" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+     <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Nossos Serviços</h3>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Impressão Digital -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ???
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Impressão Digital</h4>
+       <p class="text-gray-600">Impressão de alta qualidade para pequenas e médias tiragens com entrega rápida.</p>
+      </div><!-- Offset -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ??
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Impressão Offset</h4>
+       <p class="text-gray-600">Ideal para grandes tiragens com excelente custo-benefício e acabamento profissional.</p>
+      </div><!-- Cartões de Visita -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ??
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Cartões de Visita</h4>
+       <p class="text-gray-600">Cartões personalizados com acabamentos especiais: verniz, relevo e hot-stamping.</p>
+      </div><!-- Banners -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ??
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Banners e Faixas</h4>
+       <p class="text-gray-600">Banners em lona, adesivados e impressos em diversos tamanhos para sua divulgação.</p>
+      </div><!-- Adesivos -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ?
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Adesivos</h4>
+       <p class="text-gray-600">Adesivos de corte, transparentes, holográficos com aplicação versátil.</p>
+      </div><!-- Embalagens -->
+      <div class="service-card bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-600">
+       <div class="service-icon mb-4">
+        ??
+       </div>
+       <h4 class="text-xl font-bold mb-3 text-gray-800">Embalagens</h4>
+       <p class="text-gray-600">Caixas, sacolas e embalagens personalizadas para seu produto.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Why Us Section -->
+   <section class="py-16 px-4 bg-blue-50">
+    <div class="max-w-4xl mx-auto">
+     <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Por que nos escolher?</h3>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center">
+       <div class="text-5xl mb-4">
+        ??
+       </div>
+       <h4 class="font-bold text-lg mb-2 text-gray-800">Preço Justo</h4>
+       <p class="text-gray-600">Tabela de preços transparente e competitiva no mercado.</p>
+      </div>
+      <div class="text-center">
+       <div class="text-5xl mb-4">
+        ?
+       </div>
+       <h4 class="font-bold text-lg mb-2 text-gray-800">Prazo Rápido</h4>
+       <p class="text-gray-600">Entrega dentro dos prazos acordados, sempre pontual.</p>
+      </div>
+      <div class="text-center">
+       <div class="text-5xl mb-4">
+        ?
+       </div>
+       <h4 class="font-bold text-lg mb-2 text-gray-800">Qualidade</h4>
+       <p class="text-gray-600">Acabamento impecável em todos os nossos produtos.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contato" class="py-20 px-4">
+    <div class="max-w-2xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+     <h3 class="text-3xl font-bold text-center mb-10 text-gray-800">Entre em Contato</h3>
+     <div class="space-y-6"><!-- WhatsApp -->
+      <div class="flex items-center gap-4 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+       <div class="text-4xl">
+        ??
+       </div>
+       <div>
+        <h4 class="font-bold text-gray-800">WhatsApp/Telefone</h4><a id="phone-display" href="https://wa.me/558198637875" target="_blank" class="text-blue-600 font-bold text-lg hover:text-blue-800"> 81 98637-7875 </a>
+       </div>
+      </div><!-- Email -->
+      <div class="flex items-center gap-4 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+       <div class="text-4xl">
+        ??
+       </div>
+       <div>
+        <h4 class="font-bold text-gray-800">E-mail</h4><a id="email-display" href="mailto:publiquegrafica@gmail.com" class="text-blue-600 font-bold text-lg hover:text-blue-800"> publiquegrafica@gmail.com </a>
+       </div>
+      </div><!-- Info -->
+      <div class="flex items-center gap-4 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-600">
+       <div class="text-4xl">
+        ??
+       </div>
+       <div>
+        <h4 class="font-bold text-gray-800">Modalidade</h4>
+        <p class="text-gray-700 text-lg">Gráfica 100% Online</p>
+       </div>
+      </div>
+     </div>
+     <div class="mt-10 p-6 bg-green-50 rounded-lg border-l-4 border-green-600">
+      <p class="text-gray-700 text-center"><strong>Solicite um orçamento sem compromisso!</strong><br>
+        Resposta rápida em até 2 horas úteis.</p>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="hero-gradient text-white text-center py-6">
+    <p>© 2024 Gráfica Publique. Todos os direitos reservados.</p>
+   </footer>
+  </div>
+  <script>
+        const defaultConfig = {
+            slogan: "Preço justo, prazo e qualidade!",
+            phone: "81 98637-7875",
+            email: "publiquegrafica@gmail.com"
+        };
+
+        let config = { ...defaultConfig };
+
+        const element = {
+            defaultConfig,
+            onConfigChange: async (newConfig) => {
+                config = newConfig;
+                
+                // Atualizar slogan
+                const sloganDisplay = document.getElementById('slogan-display');
+                if (sloganDisplay) {
+                    sloganDisplay.textContent = config.slogan || defaultConfig.slogan;
+                }
+
+                // Atualizar telefone
+                const phoneDisplay = document.getElementById('phone-display');
+                if (phoneDisplay) {
+                    const cleanPhone = (config.phone || defaultConfig.phone).replace(/\D/g, '');
+                    phoneDisplay.textContent = config.phone || defaultConfig.phone;
+                    phoneDisplay.href = `https://wa.me/${cleanPhone}`;
+                }
+
+                // Atualizar email
+                const emailDisplay = document.getElementById('email-display');
+                if (emailDisplay) {
+                    emailDisplay.textContent = config.email || defaultConfig.email;
+                    emailDisplay.href = `mailto:${config.email || defaultConfig.email}`;
+                }
+            },
+
+            mapToCapabilities: (cfg) => ({
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            }),
+
+            mapToEditPanelValues: (cfg) => new Map([
+                ["slogan", cfg.slogan || defaultConfig.slogan],
+                ["phone", cfg.phone || defaultConfig.phone],
+                ["email", cfg.email || defaultConfig.email]
+            ])
+        };
+
+        if (window.elementSdk) {
+            window.elementSdk.init(element);
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d616701f6aaa182',t:'MTc3MjQ2NTAwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
